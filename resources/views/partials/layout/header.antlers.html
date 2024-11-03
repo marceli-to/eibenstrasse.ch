@@ -1,0 +1,25 @@
+<header class="bg-mint h-90 md:h-auto flex items-center md:pt-45 md:pb-30 xl:pt-60">
+  {{ partial:layout/inner class="w-full h-90 md:h-auto flex justify-between items-center" }}
+    <div class="md:hidden">
+      <a 
+        href="javascript:;" 
+        x-on:click="menu = ! menu" 
+        title="{{ "Menü anzeigen" | trans }}"
+        :class="{ 'is-active': menu === true }"
+        class="group flex justify-center items-center text-juniper w-24 h-20">
+        <span x-show="menu === false">
+          {{ partial:icons/burger class="w-24 h-auto" }}
+        </span>
+        <span x-cloak x-show="menu === true">
+        {{ partial:icons/cross class="w-18 h-auto" }}
+        </span>
+      </a>
+    </div>
+    <div class="md:flex md:w-full md:justify-between md:items-end">
+      {{ partial:menu/wrapper }}
+      <a href="/" title="Projekt">
+        {{ partial:icons/logo-project class="block relative w-auto h-50 md:h-95 xl:h-115 md:-top-5" }}
+      </a>
+    </div>
+  {{ /partial:layout/inner }}
+</header>

@@ -1,0 +1,12 @@
+<div 
+  x-cloak 
+  x-show="menu"
+  class="bg-mint border-juniper border-b-2 md:border-b-0 md:bg-transparent absolute left-0 top-90 z-50 w-full md:top-0 md:!block md:relative">
+  <nav class="px-20 md:px-0 pb-15 md:pb-0">
+    <ul class="flex flex-col gap-y-10 md:flex-row md:gap-y-0 md:gap-x-20 xl:gap-x-30">
+      {{ nav:main }}
+        {{ partial:menu/item }}
+      {{ /nav:main }}
+    </ul>
+  </nav>
+</div>
