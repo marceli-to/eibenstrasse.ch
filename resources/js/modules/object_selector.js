@@ -8,7 +8,7 @@ const ObjectSelector = (function() {
   const createBadge = function(value) {
     const badge = document.createElement('span');
     badge.classList.add('badge');
-    badge.innerHTML = `${value}<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.00523 0.934136L5.00002 3.93934L1.99482 0.934136L0.934159 1.9948L3.93936 5L0.934159 8.0052L1.99482 9.06586L5.00002 6.06066L8.00523 9.06586L9.06589 8.0052L6.06068 5L9.06589 1.9948L8.00523 0.934136Z" fill="white"/></svg>`;
+    badge.innerHTML = `${value}<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.00523 0.934136L5.00002 3.93934L1.99482 0.934136L0.934159 1.9948L3.93936 5L0.934159 8.0052L1.99482 9.06586L5.00002 6.06066L8.00523 9.06586L9.06589 8.0052L6.06068 5L9.06589 1.9948L8.00523 0.934136Z" fill="#ffffff"/></svg>`;
     return badge;
   };
 

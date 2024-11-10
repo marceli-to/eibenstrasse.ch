@@ -35,12 +35,11 @@ export default {
         'sm': '0.875rem', // 14px
         'base': '1rem', // 16px
         'md': '1.125rem', // 18px
-        'lg': '1.25rem', // 20px
+        'lg': '1.375rem', // 22px
         'xl': '1.625rem', // 26px
         '2xl': '2rem', // 32px
         '3xl': '2.375rem', // 36px
         '4xl': '3rem', // 48px
-        // 5xl, 72px in rem
         '5xl': '4.5rem', // 72px
         '6xl': '5.75rem', // 92px
       },

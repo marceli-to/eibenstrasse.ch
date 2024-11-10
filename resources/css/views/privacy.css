@@ -1,0 +1,17 @@
+
+.imprint h1,
+.privacy h1 {
+  @apply font-rift font-bold text-4xl md:text-5xl xl:text-6xl leading-none uppercase mb-20 xl:mb-40
+}
+.imprint h2,
+.privacy h2 {
+  @apply font-rift font-medium text-xl md:text-3xl xl:text-4xl tracking-wide uppercase mb-5 xl:mb-10
+}
+
+.privacy p {
+  @apply max-w-3xl;
+}
+
+.privacy a {
+  @apply underline hover:no-underline underline-offset-2;
+}

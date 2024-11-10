@@ -8,7 +8,7 @@
 
   {{ partial:layout/inner }}
   
-    {{ partial:components/headings/h1 title="Wohnungen" class="mb-20 xl:mb-30" }}
+    {{ partial:components/headings/h1 title="Wohnungen" class="mb-20 xl:mb-40" }}
     <div class="md:grid md:grid-cols-12 md:gap-20 xl:gap-40">
       <div class="md:col-span-7">
         <p><strong>Die Mietwohnungen im Neubau «Eibe 8045» überzeugen mit offenen Grundrissen, einzigartiger Innenarchitektur und attraktiven Aussenbereichen, welche sowohl privat als auch gemeinschaftlich genutzt werden können. Beim Ausbau der Wohnungen wurde viel Wert auf langlebige, hochwertige Materialien gelegt.</strong></p> 
@@ -26,19 +26,114 @@
 
   {{ partial:layout/inner }}
 
-    {{ partial:components/headings/h2 title="Ausbau Wohnungen" class="!text-juniper mb-20 xl:mb-30" }}
-
-
+    {{ partial:components/headings/h2 title="Ausbau Wohnungen" class="!text-juniper" }}
+    {{ partial:layout/grid }}
+      <div class="md:col-span-6">
+        {{ partial:components/headings/h3 title="Bodenbeläge" }}
+        <ul>
+          <li>Wohnbereich & Zimmer: Riemenparkett Eiche, geölt</li>
+          <li>Badezimmer: Feinsteinzeugplatten glasiert, Ornamente in Hellbeige, Hellgrau & Schwarz</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Wandbeläge & Decken" }}
+        <ul>
+          <li>Wohnbereich & Zimmer: Weissputz, weiss gestrichen</li>
+          <li>Badezimmer: Feinsteinzeugplatten, anthrazit matt</li>
+          <li>Raumhöhe im Erdgeschoss & Obergeschoss: ca. 2.48m</li>
+          <li>Raumhöhe im Attikageschoss: ca. 2.42m</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Küche" }}
+        <ul>
+          <li>Küchenfront anthrazit</li>
+          <li>Küchenabdeckung Beton Silk, seidenmatt</li>
+          <li>Küchenrückwand Beton Silk, seidenmatt</li>
+          <li>Geräte Marke Miele: Kühl-, Gefrierkombination, Backofen, Steamer, Geschirrspüler, Induktionskochfeld, Dampfabzug mit Umluft</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Badezimmer" }}
+        <ul>
+          <li>Spiegelschrank mit Einbauleuchte</li>
+          <li>Schwellenlose Dusche oder Badewanne</li>
+          <li>Waschtürme in jeder Wohnung</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Fenster" }}
+        <ul>
+          <li>Holz-Metallfenster, 3-fach Isolierverglasung, innen anthrazit</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Verdunkelung" }}
+        <ul>
+          <li>Doppelte Vorhangschiene im Wohnraum & allen Schlafzimmern, einfache Schiene im Bad</li>
+          <li>Elektrische Rafflamellenstoren bei den Fenstern</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Sonnenschutz" }}
+        <ul>
+          <li>Fenster: Elektrische Rafflamellenstoren</li>
+          <li>Balkon: Markise mit Handkurbel</li>
+          <li>Terrassen: Pergola (vollgedeckt oder halbgedeckt)</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Elektroanlagen" }}
+        <ul>
+          <li>Video-Gegensprechanlage</li>
+          <li>Spots in Küche, Korridor und Badezimmer</li>
+          <li>Multimedia-Verteiler</li>
+          <li>Glasfaseranschluss (im Verteiler Garderobenschrank)</li>
+          <li>Aussenfläche Terrasse: Steckdose</li>
+          <li>Photovoltaikanlage</li>
+        </ul>
+      </div>
+      <div class="md:col-span-6">
+        {{ partial:components/headings/h3 title="Heizungsanlagen" }}
+        <ul>
+          <li>Bodenheizung — Wärmepumpe</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Lüftungsanlagen" }}
+        <ul>
+          <li>Einzelraumluftgerät mit Wärmerückgewinnung in allen Schlafzimmern</li>
+          <li>Einzelraumventilatoren im Badezimmer</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Liftanlagen" }}
+        <ul>
+          <li>2 Personenaufzüge, 630kg, 8 Personen, rollstuhlgängig</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Keller" }}
+        <ul>
+          <li>Jede Wohnung hat einen eigenen Kellerabteil mit Steckdose</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Waschküche/Trocknungsraum" }}
+        <ul>
+          <li>Jede Wohnung verfügt über eine Waschmaschine und einen Trockner im Badezimmer</li>
+          <li>Trocknungsraum mit Secomat im UG pro Haus</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Entsorgung" }}
+        <ul>
+          <li>Unterflur-Container und Grünabfuhr</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Veloabstellplätze" }}
+        <ul>
+          <li>Veloraum im UG mit Steckdosen für E-Bikes</li>
+          <li>Veloständer im Aussenbereich</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Parking" }}
+        <ul>
+          <li>16 Einstellplätze (Ladestation möglich)</li>
+          <li>4 Motorradabstellplätze — Besucherparkplätze</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Aussenfläche" }}
+        <ul>
+          <li>Balkon keramische Platten</li>
+          <li>Ausstellmarkisen, Handkurbel</li>
+          <li>Wasseranschluss im Attikageschoss: Terrassen auf Südseite</li>
+        </ul>
+        {{ partial:components/headings/h3 title="Umgebung" }}
+        <ul>
+          <li>Sehr begrünte Aussenflächen im Erdgeschoss, Innenhof mit Gemeinschaftssitzplatz und Sitzbänken</li>
+          <li>Aufwendig begrünte Dachterrasse im 2.OG, 2 Tische inkl. Sitzbänke</li>
+        </ul>
+        <p>*Änderungen vorbehalten</p>
+      </div>
+    {{ /partial:layout/grid }}
+    <div class="mt-20 xl:mt-30">
+      {{ partial:components/forms/elements/button title="Baubeschrieb" href="/assets/downloads/eibe-8045-baubeschrieb.pdf" target="_blank" }}
+    </div>
 
   {{ /partial:layout/inner }}
-
-{{ /partial:layout/section }}
-
-
-{{ partial:layout/section class="bg-mint" }}
-
-  {{ page_elements }}
-    {{ partial:elements }}
-  {{ /page_elements }}
 
 {{ /partial:layout/section }}

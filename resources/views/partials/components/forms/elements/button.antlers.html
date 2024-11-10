@@ -1,3 +1,10 @@
-<button class="bg-mint text-white px-15 py-10 lg:px-16 lg:py-12 rounded-sm uppercase font-seria tracking-wider flex items-center justify-center hover:brightness-110 transition-all">
-  <span class="block leading-none">{{ label }}</span>
-</button>
+{{ class = "inline-block font-rift font-bold text-md md:text-lg uppercase tracking-wide border-juniper border-b-2 pr-10 pb-2 relative after:content-[''] after:absolute after:top-3 after:right-0 after:inline-block after:w-2 after:h-28 after:bg-juniper hover:text-white hover:after:bg-white hover:border-white" }}
+{{ if href }}
+  <a href="{{ href }}" class="{{ class }}" target="{{ target ?? '_self' }}">
+    {{ title }}
+  </a>
+{{ else }}
+  <button class="{{ class }} border-mint after:bg-mint hover:!text-mint hover:after:!bg-juniper hover:!border-juniper" type="{{ type ?? 'submit' }}">
+    {{ title }}
+  </button>
+{{ /if }}

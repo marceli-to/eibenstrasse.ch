@@ -3,6 +3,7 @@
 @import "vendor/swiper.css";
 @import "vendor/swiper-custom.css";
 @import "components/iso.css";
+@import "views/privacy.css";
 
 @tailwind base;
 @tailwind components;
@@ -20,30 +21,6 @@ main {
   @apply flex-1;
 }
 
-.imprint h1,
-.privacy h1,
-.imprint h2,
-.privacy h2 {
-  @apply font-rift font-bold text-xl md:text-2xl xl:text-3xl mb-10
-}
-
-.imprint h1,
-.privacy h1 {
-  @apply mb-15 md:mb-25
-}
-
-.imprint h2,
-.privacy h2 {
-  @apply mb-5 xl:mb-10 text-lg md:text-xl xl:text-2xl
-}
-
-.privacy p {
-  @apply max-w-3xl;
-}
-
-.privacy a {
-  @apply underline hover:no-underline underline-offset-2;
-}
 
 p {
   @apply mb-15 md:mb-25;
@@ -58,7 +35,7 @@ strong {
 }
 
 main ul {
-  @apply m-0 p-0 mb-15 md:mb-25 list-['–_'];
+  @apply m-0 p-0 mb-15 md:mb-25 list-['—_'];
 }
 
 main ul:last-child {
@@ -66,7 +43,7 @@ main ul:last-child {
 }
 
 main ul li {
-  @apply list-item ml-15
+  @apply list-item ml-18 pl-10
 }
 
 sub,
@@ -103,4 +80,20 @@ sup {
 .fancybox__nav .f-button svg,
 .fancybox__toolbar .f-button svg {
   @apply text-white;
+}
+
+form textarea {
+  field-sizing: content;
+}
+
+form input[type="checkbox"]:checked {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none' stroke='%23AABFB5' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='40 12 18 34 8 24'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+form .badge {
+  @apply cursor-pointer flex items-center gap-x-10  bg-mint font-rift font-bold text-md md:text-lg text-white tracking-wide uppercase leading-none border-mint border-2 py-8 px-12;
+}
+
+form .badge svg {
+  @apply size-15
 }

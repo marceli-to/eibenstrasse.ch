@@ -1,120 +1,83 @@
+{{ partial:layout/section }}
+  {{ partial:components/media/visual image="zoe-siewerdtstrasse-5" alt="" }}
+{{ /partial:layout/section }}
 
-{{ partial:layout/section class="bg-mint text-white" }}
+{{ partial:layout/section }}
   {{ partial:layout/inner }}
-
-  {{ partial:components/headings/h1 title="Lage" class="!mt-20" innerClass="!top-0 !left-0" }}
-
-    {{ partial:layout/grid }}
-
-      {{ partial:layout/span }}
-      <p>Die Siewerdtstrasse verbindet urbanes Leben mit entspanntem Wohnen in Ruhe an unschlagbarer Top-Lage. Nebst Zürichs beliebtester Kulturmeile befinden sich zahlreiche Einkaufsmöglichkeiten, trendige Restaurants, angesagte Bars und gemütliche Cafés sowie der legendäre Wochenmarkt in unmittelbarer Nähe zur Liegenschaft.</p>
-      <p>Oerlikon ist einer der lebendigsten und angesagtesten Stadtteile Zürichs! Mit einer gelungenen Mischung aus urbanem Flair und gemütlichen Trubel und Nachbarschaftsatmosphäre, bietet Oerlikon seinen Bewohnern ein einzigartiges Wohn- und Lebensgefühl.</p>
-      <p>Die Lage spricht für sich: Zentral und gut angebunden, ist Oerlikon der ideale Ausgangspunkt, um das Beste aus der pulsierenden Metropole Zürich zu erleben. Mit exzellenter Anbindung an den öffentlichen Nahverkehr, einschliesslich Bussen, Strassenbahnen und S-Bahnen, sind die Möglichkeiten grenzenlos. In nur wenigen Minuten erreichen Sie das Stadtzentrum, den Flughafen oder andere beliebte Ziele in der Umgebung sowie auch International!</p>
-      <p>Insgesamt bietet Oerlikon ein dynamisches und vielseitiges Umfeld, das sowohl für Alleinstehende, Paare als auch für kleinen Familien attraktiv ist. Eine Vielzahl von Kultur-, Event-, Freizeit- und Sportangeboten befindet sich direkt vor der Haustüre und kann bequem zu Fuss erreicht werden. Entdecken Sie die Vorzüge dieses lebendigen Stadtteils und lassen Sie sich von seinem Charme verzaubern!</p>
-      <div class="my-20 lg:my-40">
-          {{ partial:components/headings/h3 class="text-white mb-12 lg:mb-24" title="Mobilität und Anschlüsse" }}
-          <table class="w-full table mb-20 lg:mb-40">
-            <thead class="[&>tr>th]:text-left border-b border-b-white">
-              <th>Ort</th>
-              <th>Auto</th>
-              <th class="!text-right">ÖV</th>
-            </thead>
-            <tbody>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Zürich HB</td>
-                <td>15 min</td>
-                <td class="text-right">10 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Zürich Flughafen</td>
-                <td>10 min</td>
-                <td class="text-right">10 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Regensdorf</td>
-                <td>15 min</td>
-                <td class="text-right">15 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Winterthur</td>
-                <td>30 min</td>
-                <td class="text-right">25 min</td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="w-full table">
-            <thead class="[&>tr>th]:text-left border-b border-b-white">
-              <th>Ort</th>
-              <th>Fahrrad</th>
-              <th class="!text-right">zu Fuss</th>
-            </thead>
-            <tbody>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Bahnhof Oerlikon</td>
-                <td>2 min</td>
-                <td class="text-right">4 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Hallenstadion</td>
-                <td>2 min</td>
-                <td class="text-right">2 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Theater 11</td>
-                <td>3 min</td>
-                <td class="text-right">4 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Sternen Oerlikon</td>
-                <td>2 min</td>
-                <td class="text-right">6 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Marktplatz</td>
-                <td>2 min</td>
-                <td class="text-right">7 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>MFO-Park</td>
-                <td>4 min</td>
-                <td class="text-right">11 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Freibad Allenmoos</td>
-                <td>5 min</td>
-                <td class="text-right">17 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Hallenbad Oerlikon</td>
-                <td>5 min</td>
-                <td class="text-right">11 min</td>
-              </tr>
-              <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
-                <td>Kunsteisbahn Oerlikon</td>
-                <td>5 min</td>
-                <td class="text-right">7 min</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <a href="https://maps.app.goo.gl/6xzdLZnPeGXB4nQu7" 
-            target="_blank" 
-            title="Google Maps öffnen"
-            class="bg-white text-mint px-15 py-10 lg:px-16 lg:py-12 rounded-sm uppercase font-seria tracking-wider inline-flex items-center justify-center hover:bg-black hover:text-white transition-all">
-            <span class="block leading-none">Google Maps</span>
-          </a>
-        </div>
-      {{ /partial:layout/span }}
-
-      {{ partial:layout/span class="flex flex-col gap-y-16 lg:gap-y-32" }}
-        {{ partial:components/media/image image="zoe-siewerdtstrasse-lage-1" alt="" }}
-        {{ partial:components/media/image image="zoe-siewerdtstrasse-lage-2" alt="" }}
-        {{ partial:components/media/image image="zoe-siewerdtstrasse-lage-3" alt="" }}
-      {{ /partial:layout/span }}
-
+    {{ partial:components/headings/h1 title="Wohnen und Leben" }}
+    {{ partial:components/headings/h2 title="Im Herzen von Alt-Wiedikon, Kreis 3" }}
+    {{ partial:layout/grid class="!block lg:!grid" }}
+      <div class="lg:col-span-7">
+        <p class="hyphens-auto max-w-prose lg:max-w-none"><strong>Die Überbauung «Eibe 8045» entsteht im beliebten Kreis 3, im Quartier Alt-Wiedikon. Hier finden Sie alles, was Sie für den täglichen Bedarf benötigen: vielfältige Einkaufsmöglichkeiten, beliebte Restaurants und neue Cafés – ein aufblühendes Viertel mitten in Zürich.</strong></p>
+        <p class="hyphens-auto max-w-prose lg:max-w-none">Auch Naherholungsgebiete wie der Uetliberg, die Allmend-Anlage oder der Zürichsee sind in der Nähe und laden zu schönen Spaziergängen, Picknicks oder sportlichen Aktivitäten ein. Diese Orte sind sowohl mit dem Fahrrad als auch mit dem öffentlichen Verkehr gut erreichbar.</p>
+        <p class="hyphens-auto max-w-prose lg:max-w-none">Das Gebäude liegt in einer ruhigen 30er-Zone, zurückversetzt von der Strasse. Die SZU-Haltestellen Giesshübel und Binz sind nur jeweils drei Gehminuten von der Liegenschaft entfernt. Von dort aus sind Sie hervorragend an den Hauptbahnhof, nach Adliswil, zum Uetliberg und somit an alle wichtigen Ziele in der Stadt Zürich angebunden.</p>
+        <table class="mb-30 lg:mb-0 mt-15 md:mt-25 w-full max-w-lg xl:max-w-xl">
+          <thead class="font-rift font-bold uppercase text-md md:text-lg">
+            <tr class="border-b md:border-b-2 border-juniper">
+              <th class="text-left">Distanzen</th>
+              <th class="text-right">Zu Fuss</th>
+              <th class="text-right">Fahrrad</th>
+              <th class="text-right">Zug/Bus</th>
+              <th class="text-right">Auto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b md:border-b-2 border-juniper">
+              <td class="pr-20 md:pr-30 py-5">Zürich HB</td>
+              <td class="py-5 text-right">30min</td>
+              <td class="py-5 text-right">15min</td>
+              <td class="py-5 text-right">10min</td>
+              <td class="py-5 text-right">7min</td>
+            </tr>
+            <tr class="border-b md:border-b-2 border-juniper">
+              <td class="pr-20 md:pr-30 py-5">Giesshübel Haltestelle</td>
+              <td class="py-5 text-right">3min</td>
+              <td class="py-5 text-right">3min</td>
+              <td class="py-5 text-right">2min</td>
+              <td class="py-5 text-right">4min</td>
+            </tr>
+            <tr class="border-b md:border-b-2 border-juniper">
+              <td class="pr-20 md:pr-30 py-5">Binz Haltestelle</td>
+              <td class="py-5 text-right">3min</td>
+              <td class="py-5 text-right">3min</td>
+              <td class="py-5 text-right">–</td>
+              <td class="py-5 text-right">1min</td>
+            </tr>
+            <tr class="border-b md:border-b-2 border-juniper">
+              <td class="pr-20 md:pr-30 py-5">Einkaufen</td>
+              <td class="py-5 text-right">3min</td>
+              <td class="py-5 text-right">1min</td>
+              <td class="py-5 text-right">–</td>
+              <td class="py-5 text-right">1min</td>
+            </tr>
+            <tr class="border-b md:border-b-2 border-juniper">
+              <td class="pr-20 md:pr-30 py-5">Apotheke</td>
+              <td class="py-5 text-right">4min</td>
+              <td class="py-5 text-right">2min</td>
+              <td class="py-5 text-right">–</td>
+              <td class="py-5 text-right">2min</td>
+            </tr>
+            <tr class="border-b md:border-b-2 border-juniper">
+              <td class="pr-20 md:pr-30 py-5">Flughafen</td>
+              <td class="py-5 text-right">–</td>
+              <td class="py-5 text-right">–</td>
+              <td class="py-5 text-right">22min</td>
+              <td class="py-5 text-right">20min</td>
+            </tr>
+            <tr class="border-b md:border-b-2 border-juniper">
+              <td class="pr-20 md:pr-30 py-5">Autobahn</td>
+              <td class="py-5 text-right">–</td>
+              <td class="py-5 text-right">–</td>
+              <td class="py-5 text-right">–</td>
+              <td class="py-5 text-right">5min</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="flex flex-col gap-y-20 xl:gap-y-30 lg:col-span-5">
+        {{ partial:components/fancybox/item image="/assets/zoe-siewerdtstrasse-cam-1" alt="" }}
+        {{ partial:components/fancybox/item image="/assets/zoe-siewerdtstrasse-cam-2" alt="" }}
+      </div>
     {{ /partial:layout/grid }}
-
   {{ /partial:layout/inner }}
-
 {{ /partial:layout/section }}

@@ -1,4 +1,4 @@
-<label for="{{ id }}" class="flex items-start sm:items-center {{ error ? 'text-red-600' : '' }}">
+<label for="{{ id }}" class="flex items-center gap-x-10 lg:gap-x-15 {{ error ? 'text-red-600' : '' }}">
   <input 
     type="checkbox" 
     name="{{ field }}" 
@@ -7,6 +7,7 @@
       checked
     {{ /if }}
     value="1"
-    class="rounded-sm -mt-2 mr-10 w-18 h-18 bg-white opacity-100 accent-mint !ring-0 !border-none !shadow-none">
+    class="appearance-none size-22 lg:size-26 ring-0 focus:ring-0 !ring-offset-0 !outline-none border-2 border-mint text-black bg-white !accent-mint bg-center bg-no-repeat bg-[length:16px_auto] lg:bg-[length:18px_auto] -mt-2">
     <span>Ich habe die <a href="/datenschutz" target="_blank" class="inline-block mx-4 underline underline-offset-4 decoration-1 hover:no-underline">Datenschutzerklärung</a> gelesen und akzeptiere diese</span>
 </label>
+
