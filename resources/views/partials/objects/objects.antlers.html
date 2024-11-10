@@ -7,7 +7,9 @@
   {{ partial:layout/span class="!col-span-full md:!col-span-7 lg:!col-span-6" }}
     {{ partial:components/headings/h2 title="Wohnungen" class="text-md lg:text-2xl !mb-5 lg:!mb-15" }}
 
-    {{ collection from="objects" as="objects" sort="order" }}
+    {{# {{ apartments:get }} #}}
+
+    {{# {{ collection from="objects" as="objects" sort="order" }}
       {{ partial:components/table/table class="mb-20 lg:mb-40" }}
         {{ partial:components/table/thead }}
         {{ objects }}
@@ -126,7 +128,7 @@
         </div>
       </div>
 
-    {{ /collection }}
+    {{ /collection }} #}}
   {{ /partial:layout/span }}
 
 
