@@ -6,8 +6,8 @@
     <option value="Alle 2.5-Zimmerwohnungen">Alle 2.5-Zimmerwohnungen</option>
     <option value="Alle 3.5-Zimmerwohnungen">Alle 3.5-Zimmerwohnungen</option>
     <option value="Alle 4.5-Zimmerwohnungen">Alle 4.5-Zimmerwohnungen</option>
-    {{ collection:objects }}
-      <option value="Wohnung {{ number }}" {{ value == number ? 'selected' : ''}}>Wohnung {{ number }}</option>
-    {{ /collection:objects }}
+    {{ apartments:get }}
+      <option value="Wohnung {{ title }}" {{ value == title ? 'selected' : ''}}>Wohnung {{ title }}</option>
+    {{ /apartments:get }}
   {{ /if }}
 </select>
