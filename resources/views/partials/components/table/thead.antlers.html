@@ -1,29 +1,38 @@
-<thead class="border-b border-b-mint {{ class }}">
-  <tr class="bg-white sticky top-78 z-50 md:hidden">
+<thead class="{{ class }}">
+  {{# <tr class="bg-white sticky top-78 z-50 md:hidden">
     <th colspan="8">
       <div class="py-10">
         {{ partial:objects/iso class="h-150 w-auto block overflow-visible" }}
       </div>
     </th>
-  </tr>
-  <tr class="sticky top-230 bg-white md:relative md:bg-transparent md:top-0 z-60 [&>th]:py-12 [&>th]:align-middle [&>th]:leading-none [&>th]:font-seria [&>th]:font-medium [&>th]:text-mint">
-    <th class="text-left w-[8%] sm:w-[10%]">Nr.</th>
-    <th class="text-left w-[12%] sm:w-[8%]">Etage</th>
-    <th class="text-left w-[4%]">
+  </tr> #}}
+  <tr class="sticky -top-2 bg-white [&>th]:py-12 [&>th]:align-middle [&>th]:leading-none [&>th]:font-bold [&>th]:text-juniper [&>th]:pb-15 [&>th]:xl:pb-21">
+    <th class="text-left w-[13%]">
+      Nr.
+    </th>
+    <th class="text-left w-[10%]">
+      Etage
+    </th>
+    <th class="text-left w-[3%]">
       Zi
     </th>
-    <th class="text-right w-[8%]">
-      BWF<sup class="pl-2">1</sup>
+    <th class="text-right w-[10%]">
+      HNF m<sup>2</sup>
     </th>
-    <th class="text-right w-[8%] sm:table-cell">
-      AF<sup class="pl-2">2</sup>
+    <th class="text-right w-[13%]">
+      Netto MZ
     </th>
-    <th class="text-right w-[10%] sm:w-[17%]">
-      Preis<sup class="pl-2">3</sup>
+    <th class="text-right w-[10%] pr-4">
+      NK
     </th>
-    <th class="text-center w-[13%]">
+    <th class="text-right w-[13%]">
+      Brutto MZ
+    </th>
+    <th class="text-center w-[11%]">
       Plan
     </th>
-    <th class="text-right w-[14%]">Anmeldung</th>
+    <th class="text-right w-[14%]">
+      Anmeldung
+    </th>
   </tr>
 </thead>

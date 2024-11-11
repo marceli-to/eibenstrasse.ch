@@ -7,25 +7,7 @@ class FetchData
   public function execute(): string
   {
     $api_uri = env('MELON_API_URI');
-    $data = $this->get($api_uri);
-    $json_data = collect(json_decode($data, true));
-    $apartment_pages[] = isset($json_data['results']) ? $json_data['results'] : [];
-
-    // if $json_data['next'] is not null, there are more pages to fetch
-    while ($json_data['next'] !== null)
-    {
-      $data = $this->get($json_data['next']);
-      $json_data = collect(json_decode($data, true));
-      $apartment_pages[] = isset($json_data['results']) ? $json_data['results'] : [];
-    }
-
-    // merge all pages into one array
-    $apartments = collect($apartment_pages)->flatten(1);
-
-    // save the data to a file
-    Storage::disk('public')->put('apartements.json', $apartments);
-
-    return $apartments;
+    return Storage::disk('public')->put('apartements.json', collect(json_decode($this->get($api_uri), true)));;
   }
 
   protected function get($uri): string

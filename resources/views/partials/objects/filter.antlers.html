@@ -8,9 +8,9 @@
         data-filterType="object-state" 
         aria-label="Verfügbarkeit">
         <option value="NULL">Alle Wohnungen</option>
-        <option value="available">frei</option>
+        <option value="free">frei</option>
         <option value="reserved">reserviert</option>
-        <option value="sold">verkauft</option>
+        <option value="rented">vermietet</option>
       </select>
     </div>
   {{ /partial:layout/span }}
@@ -38,19 +38,18 @@
         data-filterType="object-floor" 
         aria-label="Etage">
         <option value="NULL">Alle Etagen</option>
-        <option value="eg">EG</option>
-        <option value="1.og">1. OG</option>
-        <option value="2.og">2. OG</option>
-        <option value="3.og">3. OG</option>
-        <option value="4.og">4. OG</option>
-        <option value="5.og">5. OG</option>
-        <option value="attika">Attika</option>
+        <option value="EG">EG</option>
+        <option value="1.OG">1. OG</option>
+        <option value="2.OG">2. OG</option>
+        <option value="3.OG">3. OG</option>
+        <option value="4.OG">4. OG</option>
+        <option value="DG">Dachgeschoss</option>
       </select>
     </div>
   {{ /partial:layout/span }}
   
-  {{ partial:layout/span class="lg:!col-span-3 flex items-end -mb-4" }}
-    <button class="js-btn-reset inline-block font-rift font-bold text-xl md:text-2xl uppercase tracking-wide border-b-2 pr-10 pb-4 relative after:content-[''] after:absolute after:top-3 after:right-0 after:inline-block after:w-2 after:h-42 border-mint after:bg-mint hover:text-mint hover:after:bg-juniper hover:border-juniper">
+  {{ partial:layout/span class="lg:!col-span-3 flex items-end mt-30" }}
+    <button class="js-btn-reset inline-block font-rift font-bold text-xl md:text-2xl uppercase tracking-wide border-b-2 pr-10 pb-4 relative after:content-[''] after:absolute after:top-3 after:right-0 after:inline-block after:w-2 after:h-36 after:md:h-42 border-mint after:bg-mint hover:text-mint ">
       Zurücksetzen
     </button>
   {{ /partial:layout/span }}

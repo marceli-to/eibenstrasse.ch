@@ -23,7 +23,7 @@ main {
 
 
 p {
-  @apply mb-15 md:mb-25;
+  @apply mb-20 md:mb-25;
 }
 
 p:last-of-type {
