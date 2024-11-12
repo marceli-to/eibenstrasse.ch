@@ -36,14 +36,14 @@ return [
         ],
 
         'logged_in' => [
-            'driver' => 'auth',
-            'login_url' => '/login',
-            'append_redirect' => true,
+          'driver' => 'auth',
+          'login_url' => '/login',
+          'append_redirect' => false,
         ],
 
         'password' => [
             'driver' => 'password',
-            'allowed' => ['secret'],
+            'allowed' => ['eibe8045'],
             'form_url' => null,
         ],
 
