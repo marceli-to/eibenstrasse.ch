@@ -13,9 +13,9 @@ class Apartments extends Tags
   {
     // get data from api or storage
     $data = (new GetData)->execute();
-    if (isset($this->params['building']))
+    if (isset($this->params['number']))
     {
-      $data = $data->where('building.building_title', $this->params['building'])->sortBy('title')->sortBy('floor_num');
+      $data = $data->where('building.house_number', $this->params['number'])->sortBy('title')->sortBy('floor_num');
     }
     else
     {

@@ -14,11 +14,11 @@
 
       {{ partial:components/table/thead }}
 
-        <tr class="text-mint border-t border-t-mint md:sticky md:top-25">
+        <tr class="text-mint border-t-2 border-t-mint md:sticky md:top-30">
           <td colspan="9" class="bg-white py-5 xl:py-10">Eibenstrasse 18</td>
         </tr> 
 
-        {{ apartments:get building="Haus 18" }}
+        {{ apartments:get number="18" }}
         
           {{ partial:components/table/trow filterable="true" number="{{ title }}" state="{{ object_state }}" rooms="{{ rooms }}" floor="{{ floor }}" building="1" }}
 
@@ -80,7 +80,7 @@
                   href="{{ application_form }}"
                   class="font-medium text-white hover:brightness-110 bg-mint transition-all inline-flex items-center px-5 h-25 rounded-sm leading-none"
                   target="_blank">
-                  Anfrage
+                  Bewerben
                 </a>
               {{ else }}
                 {{ object_state_text }}
@@ -91,11 +91,11 @@
 
         {{ /apartments:get }}
 
-        <tr class="text-mint border-t border-t-mint md:sticky md:top-25">
+        <tr class="text-mint border-t-2 border-t-mint md:sticky md:top-30">
           <td colspan="9" class="bg-white py-5 xl:py-10">Eibenstrasse 20</td>
         </tr>
 
-        {{ apartments:get building="Haus 20" }}
+        {{ apartments:get number="20" }}
         
           {{ partial:components/table/trow filterable="true" number="{{ title }}" state="{{ object_state }}" rooms="{{ rooms }}" floor="{{ floor }}" building="1" }}
 
@@ -158,7 +158,7 @@
                   href="{{ application_form }}"
                   class="font-medium text-white hover:brightness-110 bg-mint transition-all inline-flex items-center px-5 h-25 rounded-sm leading-none"
                   target="_blank">
-                  Anfrage
+                  Bewerben
                 </a>
               {{ else }}
                 {{ object_state_text }}
