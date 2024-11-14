@@ -5,7 +5,7 @@ email:
     id: lv2hk7hm
     to: m@marceli.to
     from: no-reply@eibenstrasse.ch
-    reply_to: eibenstrasse@cavegn-immobilien.ch
+    reply_to: eibe@cavegn-immobilien.ch
     subject: 'Kontaktformular eibenstrasse.ch'
     mailer: smtp
     html: email/html/contact-owner
@@ -14,7 +14,7 @@ email:
     id: lwq9kyrs
     to: '{{ email }}'
     from: no-reply@eibenstrasse.ch
-    reply_to: eibenstrasse@cavegn-immobilien.ch
+    reply_to: eibe@cavegn-immobilien.ch
     subject: 'Kontaktformular eibenstrasse.ch'
     html: email/html/contact-user
     text: email/text/contact-user
