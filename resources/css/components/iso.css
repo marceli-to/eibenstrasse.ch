@@ -32,13 +32,11 @@
 
 
 /* State classes */
-.is-active.is-available [class^="iso-cls-"],
-.is-active.is-available [class^="iso-cls-"] {
+.is-active.is-available [data-name="Wohnung"] [class^="iso-cls-"]  {
   fill: #aabfb5;
 }
 
-.is-active.is-taken [class^="iso-cls-"],
-.is-active.is-taken [class^="iso-cls-"] {
+.is-active.is-taken [data-name="Wohnung"] [class^="iso-cls-"] {
   fill: #ab2b40;
 }
 
