@@ -43,7 +43,7 @@ return [
 
         'password' => [
             'driver' => 'password',
-            'allowed' => ['eibe8045'],
+            'allowed' => ['eibe-8045'],
             'form_url' => null,
         ],
 
